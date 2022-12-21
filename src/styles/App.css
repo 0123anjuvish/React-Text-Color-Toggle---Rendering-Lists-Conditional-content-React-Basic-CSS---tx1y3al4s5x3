@@ -1,7 +1,10 @@
 .redColor{
     color: red;
+    font-size: 30px;
 }
 
 .blueColor{
     color: blue;
+    font-size: 30px;
+    font-style: italic;
 }
