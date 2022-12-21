@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 const App = () => {
 //code here 
-const [setColor] = useState("red");
+const [color,setColor] = useState("red");
 
   return (
     <div id="main">
