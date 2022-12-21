@@ -3,28 +3,22 @@ import '../styles/App.css';
 
 const App = () => {
 //code here 
-  const[value,setValue] = useState("true");
-const [color,setColor] = useState("red
+  
+const [color,setColor] = useState("redColor");
                                
-  const onButtonClick = () =>{
-    setValue(!value)
-}
+ const colorChange =()=>{
+ if(color=="redColor"){
+ return setColor("blueColor");
+ }else{
+  return setColor("redColor");
+ }
+ };
   
-useEffect(()=>{
-  
-  if(value){
-    setColor('redColor')
-  }
-  
-  if(!value){
-  setColor('blueColor')
-  }
-}
-        ,[value] )
+ 
   return (
     <div id="main">
-      <p className={'redColor'} >Newton School</p>
-      <button id='button' onClick={onButtonClick}>Change Style</button>
+      <p className={color} >Newton School</p>
+      <button id='button' onClick={colorChange}>Change Style</button>
     </div>
   )
 }
